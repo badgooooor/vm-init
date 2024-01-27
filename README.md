@@ -1,6 +1,6 @@
 # VM Init
 
-Based on <https://github.com/kahnwong/nix>
+Personal setup script based on <https://github.com/kahnwong/nix>
 
 ## Docker
 

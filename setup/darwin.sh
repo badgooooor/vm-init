@@ -32,6 +32,20 @@ sudo chown -R "$(whoami)" "$(brew --prefix)"/*
 ####################
 brew install fish zoxide exa starship mcfly
 
+# Golang
+echo "--- install golang ---"
+brew install go
+
+# Node
+echo "--- install node ---"
+brew install nvm
+nvm install lts/hydrogen
+
+npm install -g yarn
+
+# Docker
+brew install docker
+
 ####################
 # config
 ####################
@@ -40,5 +54,5 @@ mkdir -p "$HOME/.config/fish/conf.d"
 cp fish/config.fish "$HOME/.config/fish/config.fish"
 cp fish/shell.fish "$HOME/.config/fish/conf.d/shell.fish"
 
-# starship confnig
+# starship config
 cp starship/starship.toml "$HOME/.config/starship.toml"
